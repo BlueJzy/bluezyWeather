@@ -115,7 +115,7 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404 :( ',
-        message: "Page you looked for Cann't be Found",
+        message: "Page you looked for Cann't be Found Sory",
         name: 'anuruddha bandara'
     });
 });
