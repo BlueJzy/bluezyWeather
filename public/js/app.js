@@ -9,7 +9,7 @@ weatherFrm.addEventListener("submit", (e) => {
     
     e.preventDefault();
     const location = myval.value
-    fetch("http://localhost:3000/myweather?address="+location).then( (res) => {
+    fetch("/myweather?address="+location).then( (res) => {
     res.json().then( (data) => {
         if(data.error) {
             console.log(data.error);
